@@ -28,10 +28,11 @@ echo "Before pass_by_reference values: $value1, $value2"
 pass_by_reference value1 value2
 echo "After pass_by_reference values: $value1, $value2"
 
-val1=1
-val2=2
-echo "Before pass_by_value value: $val1, $val2"
+arg1=1
+arg2=2
+echo "Before pass_by_value value: $arg1, $arg2"
 return_val=$(pass_by_value arg1 arg2)
-echo "After pass_by_value value: $val1, $val2"
+echo "After pass_by_value value: $arg1, $arg2"
+echo "pass_by_value return value: $return_val"
 
 exit 0
