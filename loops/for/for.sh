@@ -36,6 +36,22 @@ function print_odd()
 }
 
 ###############################################################################
+function print_all()
+{
+    arg1=$1
+    arg2=$2
+
+    echo "print_all"
+    for count in  `seq 1 $arg2` 
+    do
+        echo "$arg1 $count"
+    done
+    return
+}
+
+
+
+###############################################################################
 function print_max()
 {
     arg1=$1
@@ -58,5 +74,5 @@ function print_max()
 print_even "Hello World" "10"
 print_odd "Hello World" "10"
 print_max "Hello World" 100 
-
+print_all "Hello World" 25
 exit 0
